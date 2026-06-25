@@ -1,21 +1,27 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-	int x;
-	int y;
+int main (){
+	double voltage;
 	
-	cout << "Enter first value: "; cin >> x;
-	cout << "Enter second value: "; cin>> y;
+	cout << "Enter voltage reading (V):";
+	cin >> voltage;
 	
-	cout << "Sum = " << x+y << endl;
-	cout << "Difference = " << x-y << endl;
-	cout << "Product = " << x*y << endl;
-	
-	if(y!=0)
-	cout << "Quotient ="<<x/y<< endl;
-	else
-	cout <<"Division by zero is allowed"<< endl;
+	if (voltage<0){
+		cout <<"Invalid voltage reading";
+	}
+	else if (voltage <=50){
+		cout <<"low voltage";
+	}
+	else if (voltage <=240){
+		cout <<"Normal voltage";
+	}
+	else if (voltage <=415){
+		cout <<"High vboltage";
+	}
+	else {
+		cout <<"Dangerous voltage";
+	}
 	
 	return 0;
 }

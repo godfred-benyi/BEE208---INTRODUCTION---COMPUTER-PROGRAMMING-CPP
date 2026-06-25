@@ -1,10 +1,21 @@
-// Difference between Assignment Operator (=0) and Equality Operator (==0)
-// 
-// Assignment Operator (=) :
-//- Used to assign a value to a variable.
-//-Example: int a =10 ;
-//
-// Equality Operator (==):
-//- Used to compare two values.
-//-Return true if both values are equal, otherwise flse.
-//- Example: if (a==1-)
+#include<iostream>
+using namespace std;
+
+int main (){
+	double current;
+	
+	cout <<"Enter current reading:";
+	cin >> current;
+	
+	while (current<=10){
+		cout <<"Safe current reading:"<< current <<"A" <<endl;
+		
+		cout <<"Enter current reading:";
+		cin >>current;
+	}
+	
+	cout <<"Overcurrent detected. Monitoring stopped."<< endl;
+	
+	return 0;
+}
+

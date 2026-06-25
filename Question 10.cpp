@@ -1,13 +1,18 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 
-int main (){
-	int x,y;
-	cin >>x >> y;
+int main(){
+	float voltage;
 	
-	int Larger = (x>y) ? x:y;
+	cout <<" Enter initial battery voltage:";
+	cin >> voltage;
 	
-	cout << "Larger =" << Larger;
+	while (voltage >=12.0){
+		cout << "Voltage is"<< voltage <<"V. Battery OK." << endl;
+		cout << "Enter next voltage reading :";
+		cin >> voltage;
+	} 
+	cout <<"\nBattery voltage low. Recharge required."<< endl;
 	
-	return 0;	
+	return 0;
 }

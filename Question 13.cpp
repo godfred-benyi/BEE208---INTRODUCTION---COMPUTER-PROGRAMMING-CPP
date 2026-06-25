@@ -1,16 +1,22 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 
-int main (){
-	int x,y;
-	cin >>x >>y;
+int main(){
+	float voltage;
 	
-	x=x^y;
-	y=x^y;
-	x=x^y;
+	cout<<"=====Battery Voltage Test====="<<endl;
+	cout<<"Testing up to 10 battery voltage readings..."<<endl;
 	
-	cout << "x="<<x <<endl;
-	cout << "y" <<y <<endl;
-	
+	for(int i=1;i<=10;i++){
+		cout<<"Enter battery voltage readings"<<i<<":";
+		cin>>voltage;
+		
+		if(voltage<10.5){
+			cout<<"Low battery detected.Test stopped."<<endl;
+			break;
+		}else{
+			cout<<"Battery voltage normal"<<endl;
+		}
+	}
 	return 0;
 }

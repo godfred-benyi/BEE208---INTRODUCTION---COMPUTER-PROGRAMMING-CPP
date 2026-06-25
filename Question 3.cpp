@@ -1,15 +1,18 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 
-int main(){
-	int x,y,z;
-	cin >> x >> y >> z;
+int main (){
+	double GPA;
 	
-	if (x==y&&y==z)
-	cout << "Equal";
-	else
-	cout<< "Not equal";
+	cout <<"Enter GPA:";
+	cin >> GPA;
+	
+	if (GPA >=3.5){
+		cout <<"Eligible for engineering scholarship.";
+	}
+	else {
+		cout << "Not eligible for engineering scholarship.";
+	}
 	
 	return 0;
 }
-

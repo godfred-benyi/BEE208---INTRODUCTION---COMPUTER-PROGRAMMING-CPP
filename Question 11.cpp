@@ -1,9 +1,18 @@
-// Difference between Increment (++) and Decrement (--) Operators
-//
-//Assignment Operator (++):
-//-Increases the value of a variable by 1.
-// Example: int a= 5; a==;//a becomes 6
-//
-// Decrement Operator (--):
-//- Decreases the value of a variable by 1.
-//- Example: int b=5;b--;//b becomes 4
+#include<iostream>
+using namespace std;
+
+int main (){
+	int password;
+	
+	cout <<"Enter password:";
+	cin >> password;
+	
+	while (password !=2080){
+		cout << "Incorrect. Try again:";
+		cin >> password;
+	}
+	
+	cout << "Access granted to control panel." << endl;
+	
+	return 0;
+}
